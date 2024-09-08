@@ -140,6 +140,7 @@
     padding-bottom: 20px;
 }
 
+
 footer .redes a{
     color: #fff;
     display: inline-block;
@@ -148,19 +149,18 @@ footer .redes a{
     border-radius: 100%;
     width: 42px;
     height: 42px;
+    line-height: 42px;
     margin: 10px 10px;
+    font-size: 25px;
+    text-align: center;
     transition: transform 0.3s;
  }
-
-.redes a:hover {
-    transform: rotate(360deg);
-}
 
 .redes a.facebook:hover {
     background-color: #3b5998;
 }
 
-.inicio .contenido-banner .redes a.instagram:hover {
+.redes a.instagram:hover {
     background-color: #e4405f;
 }
 
@@ -183,8 +183,12 @@ ul li {
 }
 
 ul li a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    font-weight: bold;
 }
 
 .footer-line {
