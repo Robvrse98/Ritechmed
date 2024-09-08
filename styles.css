@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Parte superior del header */
@@ -29,12 +30,21 @@
     margin-right: 8px;
 }
 
+.header-top .left-section a span {
+    color: white; /* Ajusta el tamaño de la bandera */
+}
+
 .header-top .right-section .contact-item {
     display: flex;
     align-items: center;
     margin-left: 20px;
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-top .right-section .contact-item:hover {
+    color: #101a38;
 }
 
 .header-top .right-section .contact-item i {
@@ -185,10 +195,11 @@ ul li {
 ul li a{
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 ul li a:hover{
-    font-weight: bold;
+    color: #101a38;
 }
 
 .footer-line {
