@@ -8,10 +8,8 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Importar Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-
 
 <body>
     <header>
@@ -43,74 +41,87 @@
                 <a href="#" class="menu-item">Inicio</a>
                 <a href="#" class="menu-item">Lo Nuevo</a>
                 <a href="#" class="menu-item">Insumos Médicos</a>
-                <a href="#" class="menu-item">¿Quiénes somos?
-    </a>
+                <a href="#" class="menu-item">¿Quiénes somos?</a>
             </nav>
         </div>
     </header>
+    
     <!-- Aquí irá el contenido principal del cuerpo -->
+    <main>
+        <!-- Hero Slider usando Swiper.js -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('img/banner1.png');"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner2.png');"></div>
+                <div class="swiper-slide" style="background-image: url('img/banner1.png');"></div>
+            </div>
+            <!-- Paginación (puntos) -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
 
     <!-- Footer -->
-     <!-- Footer Up -->
     <footer class="footer-up">
         <div class="footer-item">
             <div class="icon-circle">
-            <i class="fas fa-lock footer-icon fa-xl"></i>
+                <i class="fas fa-lock footer-icon fa-xl"></i>
             </div>
             <span class="footer-text">Compras seguras</span>
         </div>
         <div class="footer-item">
             <div class="icon-circle">
-            <i class="fas fa-truck footer-icon"></i>
+                <i class="fas fa-truck footer-icon"></i>
             </div>
             <span class="footer-text">Envíos a nivel nacional</span>
         </div>
         <div class="footer-item">
             <div class="icon-circle">
-            <i class="ph-fill ph-seal-check footer-icon fa-2x"></i>
+                <i class="ph-fill ph-seal-check footer-icon fa-2x"></i>
             </div>
             <span class="footer-text">Garantía transparente</span>
         </div>
     </footer>
-     <!-- footer Down-->
+
     <footer class="footer-down">
         <div class="columna">
             <div class="logo-footer">
                 <img src="img/logo.png" alt="Logo">
             </div>
-                <p class="descripcion">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit modi nemo molestias delectus dolores impedit reiciendis eius quam iure quis, temporibus facere, maiores cupiditate voluptatem vitae? Et, ab illo.
-                </p>
+            <p class="descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit modi nemo molestias delectus dolores impedit reiciendis eius quam iure quis, temporibus facere, maiores cupiditate voluptatem vitae? Et, ab illo.
+            </p>
             <div class="redes">
                 <a class="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                 <a class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-            <div class="columna">
-                <h4>Sobre Nosotros</h4>
-                <ul>
+        <div class="columna">
+            <h4>Sobre Nosotros</h4>
+            <ul>
                 <li><a href="#">¿Quiénes somos?</a></li>
                 <li><a href="#">Contactos</a></li>
                 <li><a href="#">FAQs</a></li>
-                </ul>
-            </div>
-            <div class="columna">
-                <h4>Legales</h4>
-                <ul>
+            </ul>
+        </div>
+        <div class="columna">
+            <h4>Legales</h4>
+            <ul>
                 <li><a href="#">Política de privacidad</a></li>
                 <li><a href="#">Términos y condiciones</a></li>
                 <li><a href="#">Política de envíos</a></li>
                 <li><a href="#">Política de devoluciones</a></li>
-                </ul>
-            </div>
+            </ul>
+        </div>
     </footer>
 
     <footer class="footer-creditos">
         <div class="footer-line"></div>
         <p class="footer-credit">Desarrollado por F5 Marketing © 2024 RITECH. Todos los derechos reservados</p>
     </footer>
-            
+    <!-- Scripts -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
