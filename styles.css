@@ -68,10 +68,13 @@
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header-bottom .menu-item:hover {
-    text-decoration: underline;
+    background-color: #217FE3;
+    color: #E7F5FB;
 }
 
 
